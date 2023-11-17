@@ -1,27 +1,29 @@
 # CarRent
-Projeto desenvolvido por mim, Emily Matias, em seleção de vaga júnior na IBM, entre 14 a 16 de novembro de 2023. Utilizei conhecimentos adquiridos no Bootcamp Java + Node.js + Angular e documentações respectivas.
+Projeto realizado por mim, Emily Matias, como parte da seleção de vaga de desenvolvedor(a) júnior na IBM, desenvolvido entre 14 a 16 de novembro de 2023. Utilizei conhecimentos adquiridos no Bootcamp de Java + Node.js + Angular e documentações respectivas como fonte.
 
 ## Informações
-Sobre o banco de dados, no pacote `resources` há `db_data`, que contém o `.sql` com a query necessária para criar as tabelas e populá-las.
+- Sobre o banco de dados, no pacote `resources` há `db_data`, que contém o `.sql` com a query necessária para criar as tabelas e populá-las.
+- Sobre `@CrossOrigin("*")` na camada de controle, compreendo que essa abordagem não é uma boa prática, e foi aplicada como um quickfix temporário. Estou ciente da importância de uma configuração mais segura e pretendo implementar uma solução mais robusta para gerenciar as origens cruzadas de forma adequada.
 
 ### Documentação
 - Documentação da API na porta utilizada: http://localhost:8080/v3/api-docs
 - Swagger UI na porta utilizada: http://localhost:8080/swagger-ui/index.html
 
 ## Completo
-- Back-end: Métodos HTTP `GET`, `POST`, `PUT` e `DELETE`
-- Métodos de busca de todos os veículos, e veículos disponíveis
-- Aluguel de veículo atualizando lista
-- Documentação com Swagger UI
+- Back-end: Métodos HTTP `GET`, `POST`, `PUT` e `DELETE`.
+- Métodos de busca de todos os veículos, e veículos disponíveis.
+- Aluguel de veículo atualizando lista.
+- Documentação com Swagger UI.
 
 ## Incompleto:
-- Existe o `UserEntity` (seria para logar um usuário), mas `UserController` e `UserService` ainda precisam de implementação
+- `UserController` e `UserService` ainda precisam de implementação, embora o `UserEntity` esteja definido a base do usuário.
 
 ## Ainda a implementar:
-- Input mask no cadastro de veículo
-- Página de login e de painel de usuário
-- Testes unitários (back-end e front-end)
-- Timestamp de criação de veículo e timestamp de cadastro de usuário
+- Tratamento mais aprofundado dos dados recebidos no cadastro.
+- Adição de input mask no cadastro de veículo.
+- Desenvolvimento das páginas de login e do painel do usuário.
+- Implementação de testes unitários para o back-end e front-end.
+- Adição de timestamps de criação de veículo e cadastro de usuário.
 
 ## Ambiente de desenvolvimento
 
