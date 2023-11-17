@@ -1,0 +1,41 @@
+<h2>Painel Administrativo</h2>
+<h3>Cadastre ou gerencie um veículo:</h3>
+
+<form>
+    <input type="text" [(ngModel)]="vehicle.model" name="model" placeholder="Modelo do veículo">
+    <input type="text" [(ngModel)]="vehicle.brand" name="brand" placeholder="Marca do veículo">
+    <input type="text" [(ngModel)]="vehicle.color" name="color" placeholder="Cor do veículo">
+    <input type="text" [(ngModel)]="vehicle.year" name="year" pattern="" maxlength="4" placeholder="Ano do veículo">
+    <input type="text" [(ngModel)]="vehicle.plate" name="plate" pattern="" maxlength="7" placeholder="Placa do veículo">
+
+    <span>
+        <input type="button" *ngIf="btnCadastro" (click)="cadastrar(vehicle)" value="Cadastrar">
+        <input type="button" *ngIf="!btnCadastro" (click)="remover(vehicle)" value="Apagar">
+        <input type="button" *ngIf="!btnCadastro" (click)="editar(vehicle)"  value="Editar">
+        <input type="button" *ngIf="!btnCadastro" (click)="cancelar()" value="Cancelar">
+    </span>
+</form>
+
+<h3>Selecione um veículo cadastrado:</h3>
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Modelo</th>
+            <th>Marca</th>
+            <th>Cor</th>
+            <th>Ano</th>
+            <th>Placa</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehicle of vehicles; index as i" (click)="selecionarVeiculo(i)">
+            <td>{{i+1}}</td>
+            <td>{{vehicle.model}}</td>
+            <td>{{vehicle.brand}}</td>
+            <td>{{vehicle.color}}</td>
+            <td>{{vehicle.year}}</td>
+            <td>{{vehicle.plate}}</td>
+        </tr>
+    </tbody>
+</table>

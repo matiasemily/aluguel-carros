@@ -1,0 +1,13 @@
+.svgicon {
+    max-width: 30px;
+    margin-right: 15px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 200px;
+}
+
+h1 {display: inline-flex;}

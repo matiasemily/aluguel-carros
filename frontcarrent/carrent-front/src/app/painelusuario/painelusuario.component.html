@@ -1,0 +1,27 @@
+<h2>Alugue um de nossos veículos!</h2>
+<h3>Clique em um veículo disponível abaixo, e confirme sua locação:</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Modelo</th>
+            <th>Marca</th>
+            <th>Cor</th>
+            <th>Ano</th>
+            <th>Placa</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehicle of vehicles; index as i" (click)="selecionarAlugar(vehicle)">
+            <td>{{i+1}}</td>
+            <td>{{vehicle.model}}</td>
+            <td>{{vehicle.brand}}</td>
+            <td>{{vehicle.color}}</td>
+            <td>{{vehicle.year}}</td>
+            <td>{{vehicle.plate}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<input *ngIf="!btnAlugar" type="button" value="Alugar veículo" (click)="alugar(vehicle)">
