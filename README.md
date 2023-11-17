@@ -1,5 +1,5 @@
 # CarRent
-Projeto full-stack de API REST em Java Spring Boot e front-end com Angular realizado por mim, Emily Matias, como parte da seleção de vaga de desenvolvedor(a) júnior full-stack na IBM, desenvolvido entre 14 a 16 de novembro de 2023. Utilizei conhecimentos adquiridos no Bootcamp de Java + Node.js + Angular e documentações respectivas como fonte.
+Projeto full-stack de API REST de aluguel de carros, desenvolvido em Java Spring Boot e front-end com Angular. Foi realizado por mim, Emily Matias, entre 14 a 16 de novembro de 2023, como segundo desafio do Bootcamp de Java + Spring Boot + Node.js + Angular da IBM, que faz parte da seleção de vaga de desenvolvedor(a) júnior full-stack na mesma. Utilizei conhecimentos adquiridos no bootcamp e documentações respectivas como fonte.
 
 ## Informações
 - Há dois diretórios principais, `carrent` e `frontcarrent`, como o nome sugere, indicando a stack de cada parte do projeto, sendo o back-end da API na primeira pasta (`carrent`).
@@ -10,7 +10,7 @@ Projeto full-stack de API REST em Java Spring Boot e front-end com Angular reali
 - Swagger UI na porta utilizada: http://localhost:8080/swagger-ui/index.html
 - Documentação da API na porta utilizada: http://localhost:8080/v3/api-docs
 
-## Completo
+## Completo:
 - Back-end: Métodos HTTP `GET`, `POST`, `PUT` e `DELETE`.
 - Métodos de busca de todos os veículos, e veículos disponíveis.
 - Aluguel de veículo atualizando lista.
@@ -27,18 +27,15 @@ Projeto full-stack de API REST em Java Spring Boot e front-end com Angular reali
 - Adição de timestamps de criação de veículo e cadastro de usuário.
 
 ## Ambiente de desenvolvimento
-
 - Fedora Linux 38 (Workstation Edition) 64-bit
 - GNOME 44.6
 - zsh 5.9
 
 ### IDEs
-
 - IntelliJ IDEA 2023.2.5 (Community Edition)
 - Microsoft Visual Studio Code 1.84.2
 
 ### Tecnologias utilizadas
-
 - Java 17
 - Apache Maven 3
 - Spring Boot 3.1.5
